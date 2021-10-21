@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    display: block;
+  }
+  .the-start {
+    width: auto;
+    padding: 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #3a9bc7;
+    color: #4d4d4d;
+    min-width: 230px;
+    max-width: 800px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+    
+  }
+  #pictureOfMe {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 3px solid rgb(59, 70, 121);
+      border-radius: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      display:block;
+  }
+  a {
+    color: rgb(144, 219, 238);
+  }
+  #discription {
+    background-color: lightsalmon;
+    border: 2px solid rgb(59, 70, 121);
+    border-width:medium;
+    padding:10px;
+  }
+  .brief-dis {
+    font-size:20px;
+    text-align: center;
+    background-color:lightsalmon ;
+
+  }
+  #Page-name {
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    line-height: 1;
+    text-shadow: lightsalmon;
+    background-color: lightsalmon;
+  }
+  #WH {
+    background-color: lightsalmon;
+  }
+  #ED {
+    background-color: lightsalmon;
+  }
+  #SS {
+    background-color: lightsalmon;
+  }
