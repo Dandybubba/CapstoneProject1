@@ -15,6 +15,7 @@
   <aside class="introduction-to-myself">
     <header>
       <h3 id="Page-name">Delandis Massengill</h3>
+      <button onclick="imgFunction()">next image</button>
       <img
         id="pictureOfMe"
         alt="img-of-me"
@@ -149,6 +150,22 @@
           function myFunction() {
             document.getElementById('button').innerHTML =
               'Hello evaluator!<br> I want to Thank you for looking at my resume. Thank you for allowing me to continue my coding career!';
+          }
+          var currtSrc = 0;
+          function imgFunction(){
+            var imgSrc = [
+              "https://media-exp1.licdn.com/dms/image/C4E03AQE35YQcswaLPA/profile-displayphoto-shrink_400_400/0/1634922407953?e=1640217600&v=beta&t=vZEYGgpouRiLs8ra9UTe_9GrHOQlxOx3YULa6Z-LfGY",
+              "https://media-exp1.licdn.com/dms/image/C4E22AQGKSEzacwXuFw/feedshare-shrink_800/0/1635453851554?e=1638403200&v=beta&t=XRSF7e51zVtHehu424YnFFU42HO29whVCd_gRmpUyx0",
+              "https://media-exp1.licdn.com/dms/image/C4E22AQEDKfKtb8sD_A/feedshare-shrink_800/0/1635453878201?e=1638403200&v=beta&t=Ck9-rAejL1f2eiKnMaoVEJe0SXEQYstUzynzIYMP2DU"
+
+              ];
+            var imgRef=document.getElementById('pictureOfMe');
+            currtSrc = currtSrc + 1;
+            
+             if (currtSrc == imgSrc.length){
+              currtSrc = 0;
+            }
+            imgRef.src = imgSrc[currtSrc];
           }
           </script>
 </body>
